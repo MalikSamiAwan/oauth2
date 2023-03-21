@@ -198,6 +198,7 @@ class AuthorizationCodeGrant {
     _scopes = scopeList;
     _stateString = state;
     var parameters = {
+      'prompt':'login',
       'response_type': 'code',
       'client_id': identifier,
       'redirect_uri': redirect.toString(),
